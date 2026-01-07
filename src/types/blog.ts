@@ -1,6 +1,7 @@
 import { BlogCategoryNode } from "./categories";
 
 export default interface Article {
+  content: any;
   readonly id: number;
 
   title: string;

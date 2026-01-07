@@ -10,7 +10,6 @@ async function Page({ params }: any) {
   const foundOrder = data.pre_invoices.find(
     (order: any) => order.id == orderId
   );
-  console.log(data);
 
   // if (!foundOrder) return notFound();
 

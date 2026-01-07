@@ -19,7 +19,7 @@ type Gallery = {
   images: Image[];
 };
 export const metadata: Metadata = {
-  title: "گالری تصاویر | تکنو صاف",
+  title: "گالری  | تکنو صاف",
   description:
     "گالری تصاویر فروشگاه تکنو صاف شامل مجموعه‌ای از عکس‌های باکیفیت محصولات و رویدادهای ما. تصاویر متنوع و جذاب برای دید بهتر شما.",
   keywords: [
