@@ -24,7 +24,6 @@ export default function LatestPostsSidebar({
       return "تاریخ نامشخص";
     }
   };
-
   if (!Array.isArray(latestPostsData) || latestPostsData.length === 0) {
     return (
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-zinc-100">
@@ -131,7 +130,7 @@ export default function LatestPostsSidebar({
                         src={
                           post.thumbnail.startsWith("http")
                             ? post.thumbnail
-                            : `https://mpttools.co${post.thumbnail}`
+                            : `${process.env.NEXT_PUBLIC_BACK_END}${post.thumbnail}`
                         }
                         alt={post.title}
                         width={64}

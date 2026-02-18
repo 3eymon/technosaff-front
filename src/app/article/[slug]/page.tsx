@@ -125,7 +125,6 @@ function CategoriesSidebar({ categoriesData }: { categoriesData: any[] }) {
   if (!Array.isArray(categoriesData) || categoriesData.length === 0) {
     return <EmptyCategories />;
   }
-
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-zinc-100">
       <div className="p-6 border-b border-zinc-100">
@@ -253,7 +252,7 @@ async function BlogArticlePage({
     ...post,
     formattedDate: formatPersianDate(post.jalali_created),
   }));
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mpttools.co";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mpttools.ir";
   const currentUrl = `${siteUrl}/article/${data.slug}`;
 
   const breadcrumbs = [
@@ -275,6 +274,7 @@ async function BlogArticlePage({
   ];
 
   const readTime = Math.ceil((data.content?.length || 0) / 1500) || 5;
+  console.log(data.thumbnail)
   return (
     <>
       <Script

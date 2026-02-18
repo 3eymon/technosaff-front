@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'mpttools.co',
+        hostname: 'mpttools.ir',
         port: '',
         pathname: '/media/**',
       },

@@ -11,7 +11,7 @@ export type BreadcrumbItem = { name: string; url?: string };
  */
 
 export const articleSchema = (article: Article) => {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mpttools.co";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://mpttools.ir";
 
   const toISO = (dateStr?: string | null) => {
     if (!dateStr) return new Date().toISOString();
